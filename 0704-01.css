@@ -27,29 +27,29 @@ img:not(:first-of-type) {
   left: 0;
 }
 
-[src="3-1.png"] {
+[src="/images/3-1.png"] {
   animation: up 2s 1.5s both;
 }
 
-[src="3-2.png"] {
+[src="/images/3-2.png"] {
   animation: right 1s 0.5s both;
 }
 
-[src="3-3.png"] {
+[src="/images/3-3.png"] {
   animation: up 3s 1.5s both;
 }
 
-[src="3-4.png"] {
+[src="/images/3-4.png"] {
   animation: fromLeft 2s 1.5s both infinite;
   width: 100%;
   margin: 2%;
 }
 
-[src="3-5.png"] {
+[src="/images/3-5.png"] {
   animation: scale 2s 2s both infinite;
 }
 
-[src="3-6.png"] {
+[src="/images/3-6.png"] {
   animation: rotate 1s 0.5s both;
 }
 
