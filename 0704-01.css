@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  display: none;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  border: 3px solid red;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+img:not(:first-of-type) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+[src="/images/3-1.png"] {
+  animation: up 2s 1.5s both;
+}
+
+[src="/images/3-2.png"] {
+  animation: right 1s 0.5s both;
+}
+
+[src="/images/3-3.png"] {
+  animation: up 3s 1.5s both;
+}
+
+[src="/images/3-4.png"] {
+  animation: fromLeft 2s 1.5s both infinite;
+  width: 100%;
+  margin: 2%;
+}
+
+[src="/images/3-5.png"] {
+  animation: scale 2s 2s both infinite;
+}
+
+[src="/images/3-6.png"] {
+  animation: rotate 1s 0.5s both;
+}
+
+@keyframes up {
+  from {
+    top: -150px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes right {
+  0% {
+    right: -150px;
+    left: auto;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    left: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -150px;
+    right: -auto;
+    opacity: 0;
+  }
+  50% {
+    left: 0;
+    right: auto;
+    opacity: 1;
+  }
+  100% {
+    left: -150px;
+    right: -auto;
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
